@@ -63,6 +63,7 @@ If Conda:
 - `conda create --name QAML python=3.9`
 - `conda activate QAML`
 - `cd Flask`
+- `pip install spacy`
 - `python3 -m spacy download en_core_web_sm`
 - `pip3 install -r requirements.txt`
 
