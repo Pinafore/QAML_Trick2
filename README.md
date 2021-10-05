@@ -24,6 +24,7 @@ Please try our new model download script first! If there are any problems, you c
 With Script: 
 ```
 cd Flask
+pip install -r requirements.txt
 python3 download.py
 ```
 
