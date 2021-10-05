@@ -1,4 +1,5 @@
-# 2021-09-19-04-36
+# 2021-10-04-01-36
+- All files can be downloaded from the download script
 - Updated the timer
 - Now the timer will be automatically set to one hour when the web is accessed
 - If the time is up, the frontend will send message to the backend
