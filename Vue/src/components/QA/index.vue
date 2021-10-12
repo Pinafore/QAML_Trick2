@@ -245,9 +245,7 @@ export default {
   created: function () {
     this.user_id = firebase.auth().currentUser.uid;
     // console.log(this.user_id)
-    this.interval = setInterval(
-      function () {
-        this.qid =
+    this.qid =
           this.user_id +
           new Date().toLocaleString("en-US", {
             hour12: false,
@@ -258,6 +256,9 @@ export default {
             minute: "2-digit",
             second: "2-digit",
           });
+    this.interval = setInterval(
+      function () {
+        
         this.qa.highlight_words = {};
         let formData = new FormData();
 
