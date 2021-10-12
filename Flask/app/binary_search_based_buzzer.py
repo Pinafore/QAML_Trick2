@@ -281,13 +281,13 @@ def insert_into_db(q_id, date_incoming, date_outgoing, question, ans, buzzer_str
                             })
 
 def all_combinations(list_of_strings, question):
-  for i in list_of_strings:
-    s = i.lower()
     list_to_ret = set()
-    l1 = list(map(''.join, itertools.product(*zip(s.upper(), s.lower()))))
-    for i in l1:
-      if question.find(i)!=-1:
-        list_to_ret.add(i)
+    for i in list_of_strings:
+        s = i.lower()
+        l1 = list(map(''.join, itertools.product(*zip(s.upper(), s.lower()))))
+        for i in l1:
+            if question.find(i)!=-1:
+                list_to_ret.add(i)
     return list(list_to_ret)
 
 @binary_search_based_buzzer.route("/buzz_full_question", methods=["POST"])
